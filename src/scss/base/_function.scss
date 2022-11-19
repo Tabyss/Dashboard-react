@@ -1,0 +1,15 @@
+@function colors($key){
+    @return map-get($colors, $key);
+}
+
+@function color_lighten($key, $amount) {
+    @return lighten(map-get($colors, $key), $amount);
+}
+
+@function color_darken($key, $amount) {
+    @return darken(map-get($colors, $key), $amount);
+}
+
+@function font-weight($key){
+    @return map-get($font-weight, $key)
+}

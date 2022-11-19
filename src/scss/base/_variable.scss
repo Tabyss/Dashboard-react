@@ -1,0 +1,35 @@
+$colors: (
+  light:    #ffffff,
+  dark:     #2C2A4A,
+  primary:  #907AD6,
+  secondary:#FFB7E9,
+  info:     #7FDEFF,
+  danger:   #ffb4b4,
+  success:  #80FFDB,
+  warning:  #FFEB99,
+
+  success-2:#5AEDC9,
+  info-2:   #A1EFF7,
+  info-3:   #C6F4FA,
+  dark-2:   #3E3E6B,
+  dark-3:   #4F518C,
+  primary-2:#B59DEB,
+  primary-3:#DABFFF,
+  warning-2:#FFCC00,
+  warning-3:#FFDE5C,
+);
+
+
+$font-family: 'Nunito', arial;
+$font-weight: (
+    "regular" : 400,
+    "medium" : 500,
+    "semibold" : 600,
+    "bold" : 700,
+);
+
+$breakpoints: (
+  'medium': (min-width: 768px),
+  'large': (min-width: 900px),
+  'huge': (min-width: 1200px),
+);

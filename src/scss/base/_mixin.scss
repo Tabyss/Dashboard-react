@@ -1,0 +1,10 @@
+@mixin flex($flex, $align, $direction) {
+    display: flex;
+    justify-content: $flex;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin default-margin() {
+    margin: 0 8px 10px 0;
+  }

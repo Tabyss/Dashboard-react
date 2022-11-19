@@ -1,0 +1,62 @@
+.sidebar{
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+
+  .sidebar-header{
+    @include flex(start, center, row);
+    padding: 25px 15px;
+    gap: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .sidebar-main{
+    padding: 5px;
+    transition: all 0.3s ease-in;
+    
+    .sidebar-link{
+      @include flex(space-between, center, row);
+      text-decoration: none;
+      
+      .sidebar-btn{
+        @include flex(space-between, center, row);
+        width: 210px;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 10px;
+        gap: 20px;
+      }
+
+      &.select{
+        .sidebar-btn{
+          background-color: colors(primary);
+          h4, .sidebar-drop{
+            color: colors(light);
+          }
+          .sidebar-menu{
+            @include flex(space-between, center, row);
+            gap: 10px;
+          }
+        }
+        .nad{
+          background-color: colors(primary);
+          height: 54px;
+          border-radius: 10px 0 0 10px;
+          width: 10px;
+        }
+      }
+
+      &.unselect{
+        .sidebar-btn{
+          background-color: none;
+          .sidebar-menu{
+            @include flex(space-between, center, row);
+            gap: 10px;
+          }
+        }
+      }
+    }
+    
+  }
+}
